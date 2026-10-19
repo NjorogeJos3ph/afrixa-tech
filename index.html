@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Afrixa Technologies | Smart Digital Solutions</title>
+    <style>
+        /* CSS Styling */
+        :root {
+            --primary: #0f172a; /* Deep Tech Blue */
+            --accent: #10b981; /* Success Green */
+            --text-light: #f8fafc;
+            --text-dark: #334155;
+            --bg-light: #f1f5f9;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-light);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        /* Navbar */
+        header {
+            background-color: var(--primary);
+            color: var(--text-light);
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .logo span {
+            color: var(--accent);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--primary) 0%, #1e293b 100%);
+            color: var(--text-light);
+            padding: 5rem 5%;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            color: #cbd5e1;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--accent);
+            color: white;
+            padding: 0.8rem 2rem;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #059669;
+        }
+
+        /* Services Section */
+        .services {
+            padding: 4rem 5%;
+            text-align: center;
+        }
+
+        .services h2 {
+            margin-bottom: 2rem;
+            font-size: 2rem;
+            color: var(--primary);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .card {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border-top: 4px solid var(--accent);
+        }
+
+        .card h3 {
+            margin-bottom: 1rem;
+            color: var(--primary);
+        }
+
+        /* Portfolio Section */
+        .portfolio {
+            padding: 4rem 5%;
+            background-color: white;
+            text-align: center;
+        }
+
+        .portfolio h2 {
+            margin-bottom: 2rem;
+            font-size: 2rem;
+            color: var(--primary);
+        }
+
+        .portfolio-item {
+            background: var(--bg-light);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            text-align: left;
+            border-left: 4px solid var(--primary);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--primary);
+            color: var(--text-light);
+            text-align: center;
+            padding: 2rem 5%;
+            font-size: 0.9rem;
+        }
+
+        /* Floating WhatsApp Button */
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 40px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 3px #999;
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: transform 0.3s;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">Afrixa<span>Tech</span></div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Empowering Businesses with Smart Digital Solutions</h1>
+        <p>We build high-converting websites, POS systems, and digital tools tailored for the Kenyan market.</p>
+        <a href="#contact" class="btn">Get a Free Quote</a>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <h2>Our Services</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Web Development</h3>
+                <p>Fast, mobile-friendly business websites, landing pages, and e-commerce stores designed to attract customers.</p>
+            </div>
+            <div class="card">
+                <h3>POS & Inventory</h3>
+                <p>Custom point-of-sale systems linked directly to Google Sheets. Track sales live and prevent staff theft.</p>
+            </div>
+            <div class="card">
+                <h3>Digital Setup</h3>
+                <p>Google Maps registration, WhatsApp Business integration, and domain registration to get you online instantly.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+        <h2>Recent Work</h2>
+        <div class="grid">
+            <div class="portfolio-item">
+                <h3>Hospitality Client (Local Inn)</h3>
+                <p>Built a full digital menu, live POS, and owner dashboard linked to Google Sheets. Reduced order errors and stopped inventory loss.</p>
+            </div>
+            <div class="portfolio-item">
+                <h3>Business Landing Page</h3>
+                <p>Designed a high-converting landing page for a local tech shop, increasing their WhatsApp inquiries by 40%.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <p>&copy; 2024 Afrixa Technologies. Built in Kenya, for Kenya.</p>
+        <p>Location: Juja / Kiambu | Email: hello@afrixatech.com</p>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <!-- ⚠️ CHANGE THIS TO YOUR NUMBER ⚠️ -->
+    <a href="https://wa.me/254783809340?text=Habari%20Afrixa%20Tech,%20I%20saw%20your%20demo%20and%20I%20am%20interested%20in%20a%20website." class="whatsapp-float" target="_blank">
+        💬
+    </a>
+
+</body>
+</html>
